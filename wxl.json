@@ -1,0 +1,58 @@
+{
+  "manifest": 1,
+
+  "extension": {
+    "id": "wxl-modern-wmo",
+    "version": "1.0.0",
+    "abi": "1.1",
+    "entry": "wxl-modern-wmo.dll",
+    "assets": [],
+    "requires": {},
+    "conflicts": [],
+
+    "hooks": [
+      { "target": "World.MapRayIntersect" },
+      { "target": "Wmo.RootWalk" },
+      { "target": "Wmo.GroupWalk" },
+      { "target": "Wmo.RootComplete" },
+      { "target": "Wmo.GroupComplete" },
+      { "target": "Wmo.GroupParse" },
+      { "target": "Wmo.SpawnFromModf" },
+      { "target": "Wmo.WaitLoad" },
+      { "target": "Wmo.WaitLoadGroup" },
+      { "target": "Wmo.FreeMapObj" },
+      { "target": "Wmo.FreeMapObjGroup" },
+      { "target": "Wmo.UpdateMaterials" },
+      { "target": "Wmo.CreateMaterial" },
+      { "target": "Wmo.CullBatch" },
+      { "target": "Wmo.CullSortTable" },
+      { "target": "Wmo.LocateViewerMapObjs" },
+      { "target": "Wmo.PortalTraverse" },
+      { "target": "Wmo.HorizonAabbTest" },
+      { "target": "Wmo.ExtRender" },
+      { "target": "Wmo.IntRender" },
+      { "target": "Wmo.CreateOccluders" },
+      { "target": "Wmo.AllocOccluder" },
+      { "target": "Wmo.AddOccluderEdge" },
+      { "target": "Wmo.CompositeEffectBind" }
+    ]
+  },
+
+  "deploy": {
+    "mode": "release",
+    "match": "*.dll"
+  },
+
+  "listing": {
+    "title": "Modern WMO",
+    "tagline": "Loads world map objects authored for newer versions of the game, natively.",
+    "description": "store/description.md",
+    "cover": "store/cover.png",
+    "gallery": [],
+    "categories": ["assets", "world", "rendering"],
+    "accent": "#8a6d4f"
+  },
+
+  "license": "GPL-3.0-or-later",
+  "signature": null
+}
