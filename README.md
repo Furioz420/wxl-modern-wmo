@@ -4,6 +4,8 @@
 
 # wxl-modern-wmo
 
+[Build compatibility and release gate](BUILDING.md)
+
 **Loads world map objects authored for newer versions of the game, natively.**
 
 A [WarcraftXL](https://github.com/WarcraftXL/wxl-core) extension. The client's WMO loader walks each
@@ -36,10 +38,10 @@ guessing, and says so in the log.
 
 ## Building
 
-This extension builds against [wxl-core](https://github.com/WarcraftXL/wxl-core) (branch `v1.1`), which
-auto-discovers any folder dropped into its `extensions/` directory, so there's no project file of its own
-needed here. See `.github/workflows/release.yml` for the exact steps; every push to `main` builds
-`wxl-modern-wmo.dll` and publishes it as a release.
+This extension builds against the exact [compatible core revision](BUILDING.md).
+The core discovers a copy under `extensions/wxl-modern-wmo/`; this repository's
+workflow checks the Win32 build on pull requests and `main`. It does not publish
+a binary release.
 
 ## Project layout
 
